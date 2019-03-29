@@ -1,0 +1,266 @@
+body {
+    color: #707070 !important
+}
+
+.ui-square, .ui-rect, .ui-rect-5, .ui-rect-10, .ui-rect-30, .ui-rect-60, .ui-rect-67, .ui-rect-75 {
+    position: relative !important;
+    display: block !important;
+    padding-top: 100% !important;
+    width: 100% !important;
+}
+
+.ui-rect-5 {
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+}
+
+.ui-rect-10 {
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+}
+
+.text-light-dark {
+    color: #717171;
+}
+
+.bd-gray {
+    border: 1px solid #f1f1f1;
+}
+
+.text-light-gray {
+    color: #717171;
+}
+
+.bg-white-25 {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.bg-white-50 {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.bg-white-97 {
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.full-w {
+    width: 100%;
+}
+
+.tbw-3 {
+    width: 3%;
+}
+
+.tbw-5 {
+    width: 5%;
+}
+
+.tbw-7 {
+    width: 7%;
+}
+
+.tbw-9 {
+    width: 9%;
+}
+
+.tbw-11 {
+    width: 11%;
+}
+
+.tbw-13 {
+    width: 13%;
+}
+
+.tbw-15 {
+    width: 15%;
+}
+
+.tbw-17 {
+    width: 17%;
+}
+
+.tbw-19 {
+    width: 19%;
+}
+
+.bg-fill {
+    display: block;
+    width: 100%;
+}
+
+.modal {
+    z-index: 1091;
+}
+
+div[id^="modals-default"] {
+    z-index: 1092;
+}
+
+.bg-dark {
+    background-color: rgba(24, 28, 33, 0.9) !important;
+}
+
+.bg-light {
+    background-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.form-control:focus, .custom-select:focus {
+    border-bottom-color: #8c9194;
+    -webkit-box-shadow: 0 -1px 0 0 #26B4FF inset;
+    box-shadow: 0 -1px 0 0 #8c9194 inset;
+}
+
+.sidenav-vertical .sidenav-menu .sidenav-link {
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+}
+
+.custom-control-label::before {
+    border: 1px solid rgba(24, 28, 33, 0.6);
+    background-color: #fff;
+}
+
+.bd-dark, .bd-t-dark, .bd-l-dark, .bd-r-dark, .bd-b-dark {
+    border-color: #222;
+}
+
+.bd-light, .bd-t-light, .bd-l-light, .bd-r-light, .bd-b-light {
+    border-color: #8c9194;
+}
+
+.bd-dark, .bd-light {
+    border: 1px solid;
+}
+
+.bd-t-dark, .bd-t-light {
+    border-top: 1px solid;
+}
+
+.bd-l-dark, .bd-l-light {
+    border-left: 1px solid;
+}
+
+.bd-r-dark, .bd-r-light {
+    border-right: 1px solid;
+}
+
+.bd-b-dark, .bd-b-light {
+    border-bottom: 1px solid;
+}
+
+.sidenav-vertical, .sidenav-vertical .sidenav-block, .sidenav-vertical .sidenav-inner > .sidenav-item, .sidenav-vertical .sidenav-inner > .sidenav-header {
+    width: 17.625rem;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: .2rem;
+}
+
+ol {
+    margin-left: -25px;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    pointer-events: auto !important;
+}
+
+.flex-auto {
+    flex: auto
+}
+
+.modal-header-center {
+    -webkit-box-pack: center;
+    display: -webkit-box;
+}
+
+.div-h-60 {
+    min-height: 60px;
+}
+
+.div-h-40 {
+    min-height: 40px;
+}
+
+.modal-lg {
+    max-width: 70rem;
+}
+
+.form-group {
+    margin-bottom: .6rem;
+}
+
+.form-control:disabled, .form-control {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+    .form-control:disabled {
+        font-weight: bold;
+        border-bottom: 1px dotted rgba(24, 28, 33, 0.3) !important;
+        color: #5a5a5a !important;
+    }
+
+table.dataTable {
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+.input-daterange input {
+    text-align: left;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.default-style div.card-datatable {
+    padding: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: 40%;
+}
+
+/* PRINT FORM */
+
+@media print and (max-width:1280px) {
+    .print-area {
+        min-height: 605px;
+    }
+
+    label > h4 {
+        font-size: 90%;
+    }
+
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    .app-brand {
+        display: none;
+    }
+
+    .print-hidden {
+        display: none;
+    }
+
+    .card-body {
+        padding: 1.5rem 10px;
+    }
+
+    .bg-dark {
+        background-color: #222 !important;
+    }
+
+    .text-white {
+        color: #222 !important;
+    }
+}

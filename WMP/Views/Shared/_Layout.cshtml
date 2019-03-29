@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="default-style">
+<head>
+    <title>Warehouse Management</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    @Styles.Render("~/Content/cssMaster")
+    @Scripts.Render("~/bundles/jsStarter")
+</head>
+<body>
+    <div class="page-loader">
+        <div class="bg-primary"></div>
+    </div>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-2">
+        <div class="layout-inner">
+            <!-- Layout sidenav -->
+            @{Html.RenderAction("_SideNavbar", "Home");}
+            <!-- / Layout sidenav -->
+            <!-- Layout container -->
+            <div class="layout-container">
+                <!-- Layout navbar -->
+                @{Html.RenderAction("_TopNavbar", "Home");}
+                <!-- / Layout navbar -->
+                <!-- Layout content -->
+                <div class="layout-content">
+                    <!-- Content -->
+                    <div class="container-fluid flex-grow-1 container-p-y">
+                        @RenderBody()
+                    </div>
+                    <!-- / Content -->
+                    <!-- Layout footer -->
+                    @{Html.RenderAction("_LayoutFooter", "Home");}
+                    <!-- / Layout footer -->
+                </div>
+                <!-- Layout content -->
+            </div>
+            <!-- / Layout container -->
+        </div>
+        <!-- Overlay -->
+        <div class="layout-overlay layout-sidenav-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    @Scripts.Render("~/bundles/jsMaster")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
